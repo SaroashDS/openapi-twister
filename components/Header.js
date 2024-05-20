@@ -21,19 +21,18 @@ const Header = (props) => {
   return (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
       <div className="logo">
-        <Image alt="logo" src={logo} width='150px' height='150px' />
+        <Image alt="logo" src={logo} width='300px' height='300px' />
       </div>
       <div className="content">
         <div className="inner">
-          <h1>P2O</h1>
-          <p>Convert Postman collections to Open API schema in one click.<br /> <br />
-            Works locally on the browser without sending any data to any server.</p>
+          <h1> Twistine :  POST to OPEN🅰️🅿️ℹ️ </h1>
+          <p style={{ fontSize: '1.2em' }}>💽.<br /> <br />
+            A Proof of Concept.</p> {/* Increased font size */}
         </div>
       </div>
       <nav>
         <ul>
           <li><a href="#" onClick={(event) => { handleLinkClick(event, 'convert'); }}>Convert</a></li>
-          <li><a href="#" onClick={(event) => { handleLinkClick(event, 'about') }}>About</a></li>
         </ul>
       </nav>
     </header>
@@ -45,4 +44,4 @@ Header.propTypes = {
   timeout: PropTypes.bool
 }
 
-export default Header
+export default Header;

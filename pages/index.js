@@ -6,9 +6,8 @@ import Main from "../components/Main"
 import Footer from "../components/Footer"
 
 const baseUrl = 'https://p2o.defcon007.com',
-    title = 'Postman to OpenAPI',
-    description = 'Convert Postman collections to Open API schema in one click.  Works locally on the browser without sending any data to any server.',
-    coverImageUrl = baseUrl + '/images/cover-image.jpg';
+    newTitle = 'TWIST : P to OA',
+    newDescription = '...';
 
 class IndexPage extends React.Component {
     constructor(props) {
@@ -79,23 +78,23 @@ class IndexPage extends React.Component {
                 <div>
                     <Head>
                         {/* Primary Meta Tags */}
-                        <title>{title}</title>
-                        <meta name="title" content={title} />
-                        <meta name="description" content="" />
+                        <title>{newTitle}</title>
+                        <meta name="title" content={newTitle} />
+                        <meta name="description" content={newDescription} />
 
                         {/* Open Graph / Facebook */}
                         <meta property="og:type" content="website" />
                         <meta property="og:url" content={baseUrl} />
-                        <meta property="og:title" content={title} />
-                        <meta property="og:description" content={description} />
-                        <meta property="og:image" content={coverImageUrl} />
+                        <meta property="og:title" content={newTitle} />
+                        <meta property="og:description" content={newDescription} />
+                        <meta property="og:image" content={baseUrl + '/images/cover-image.jpg'} />
 
                         {/* Twitter */}
                         <meta property="twitter:card" content="summary_large_image" />
                         <meta property="twitter:url" content={baseUrl} />
-                        <meta property="twitter:title" content={title} />
-                        <meta property="twitter:description" content={description} />
-                        <meta property="twitter:image" content={coverImageUrl} />
+                        <meta property="twitter:title" content={newTitle} />
+                        <meta property="twitter:description" content={newDescription} />
+                        <meta property="twitter:image" content={baseUrl + '/images/cover-image.jpg'} />
                     </Head>
 
                     <div id="wrapper">
